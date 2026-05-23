@@ -4,7 +4,7 @@ set -e  # Exit immediately on error
 
 cd /opt/foundryvtt || exit
 echo "Copying zip file..."
-find /host -type f -name '[f,F]oundry[vtt,VTT]*.zip' -exec cp '{}' . ';'
+find /host -type f -name '[Ff]oundry*.zip' -exec cp '{}' . ';'
 
 echo "Unzipping..."
 unzip -o ./*.zip -d unpacked && rm ./*.zip

@@ -1,4 +1,3 @@
-version: '3'
 services:
   foundryvtt:
     image: cryptoxic/fvtt-docker:latest

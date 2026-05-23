@@ -36,12 +36,22 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Extract Docker metadata
+        id: meta
+        uses: docker/metadata-action@v5
+        with:
+          images: |
+            cryptoxic/fvtt-docker
+            ghcr.io/kryptoxic/fvtt-docker
+          tags: |
+            type=semver,pattern={{version}}
+            type=raw,value=latest,enable={{is_default_branch}}
+
       - name: Build and push
         uses: docker/build-push-action@v5
         with:
           context: .
-          platforms: linux/amd64,linux/arm/v6,linux/arm/v7,linux/arm64/v8,linux/ppc64le,linux/s390x
+          platforms: linux/amd64,linux/arm/v6,linux/arm/v7,linux/arm64/v8,linux/s390x
           push: true
-          tags: |
-            cryptoxic/fvtt-docker:latest
-            ghcr.io/kryptoxic/fvtt-docker:latest
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
