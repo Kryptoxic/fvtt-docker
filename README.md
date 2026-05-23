@@ -4,7 +4,9 @@
 
 ## Foundry VTT - Docker
 
-This repository hosts the Foundry VTT `Dockerfile` for [direckthit/fvtt-docker](https://hub.docker.com/r/direckthit/fvtt-docker) on Docker Hub.
+This repository hosts the Foundry VTT `Dockerfile` for [cryptoxic/fvtt-docker](https://hub.docker.com/r/cryptoxic/fvtt-docker) on Docker Hub and [ghcr.io/kryptoxic/fvtt-docker](https://github.com/Kryptoxic/fvtt-docker/pkgs/container/fvtt-docker) on the GitHub Container Registry.
+
+> Originally created by [BenjaminPrice](https://github.com/BenjaminPrice/fvtt-docker), based on the original [direckthit/fvtt-docker](https://hub.docker.com/r/direckthit/fvtt-docker) image. This fork is maintained by [Kryptoxic](https://github.com/Kryptoxic) following the archival of the upstream repository.
 
 > [Foundry VTT](https://foundryvtt.com/) is a virtual tabletop for playing tabletop RPG games such as Dungeons & Dragons 5e.
 
@@ -64,7 +66,7 @@ Using the above link should grant you a $100 credit (expires in 60 days).
 Manually download it or use the command below
 
 ```shell
-wget https://raw.githubusercontent.com/BenjaminPrice/fvtt-docker/master/docker-compose.yaml
+wget https://raw.githubusercontent.com/Kryptoxic/fvtt-docker/master/docker-compose.yaml
 ```
 
 ### Step 2 - Download the Foundry VTT Zip File
