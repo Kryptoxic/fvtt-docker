@@ -1,6 +1,9 @@
 FROM node:26-trixie-slim
 
-RUN deluser node && \
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends unzip && \
+    rm -rf /var/lib/apt/lists/* && \
+    deluser node && \
     mkdir -p /opt/foundryvtt/resources/app && \
     mkdir /data && \
     mkdir /data/foundryvtt && \
