@@ -1,8 +1,6 @@
 # Foundry VTT - Docker
 
 [![amd64](https://img.shields.io/docker/v/cryptoxic/fvtt-docker?arch=amd64&label=amd64&style=flat-square&filter=!latest)](https://hub.docker.com/r/cryptoxic/fvtt-docker/tags)
-[![arm/v6](https://img.shields.io/docker/v/cryptoxic/fvtt-docker?arch=arm&variant=v6&label=arm%2Fv6&style=flat-square&filter=!latest)](https://hub.docker.com/r/cryptoxic/fvtt-docker/tags)
-[![arm/v7](https://img.shields.io/docker/v/cryptoxic/fvtt-docker?arch=arm&variant=v7&label=arm%2Fv7&style=flat-square&filter=!latest)](https://hub.docker.com/r/cryptoxic/fvtt-docker/tags)
 [![arm64](https://img.shields.io/docker/v/cryptoxic/fvtt-docker?arch=arm64&variant=v8&label=arm64&style=flat-square&filter=!latest)](https://hub.docker.com/r/cryptoxic/fvtt-docker/tags)
 [![s390x](https://img.shields.io/docker/v/cryptoxic/fvtt-docker?arch=s390x&label=s390x&style=flat-square&filter=!latest)](https://hub.docker.com/r/cryptoxic/fvtt-docker/tags)
 
@@ -173,8 +171,6 @@ image: ghcr.io/kryptoxic/fvtt-docker:latest
 Each tagged image is built for the following platforms:
 
 - `linux/amd64`
-- `linux/arm/v6`
-- `linux/arm/v7`
 - `linux/arm64/v8`
 - `linux/s390x`
 
